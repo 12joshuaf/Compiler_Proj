@@ -1,7 +1,5 @@
 /* Utilities for code generation.
-    Scratch register allocation tracking - book page 181
-    Label management - book page 182
-    Symbol code generation - book page 183 */
+
 #ifndef CODE_GEN_UTIL_H
 
 #define CODE_GEN_UTIL_H
