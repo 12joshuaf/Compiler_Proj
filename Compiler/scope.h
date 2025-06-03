@@ -1,7 +1,4 @@
-/* See chapter 7
-  Scope management code */
 
-  /* Chapter 7 - variable scope tracking */
 
   #ifndef SCOPE_H
 
