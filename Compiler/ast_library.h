@@ -90,10 +90,8 @@ struct expr {
   int integer_value;
   const char *string_literal;
 
-  // Used by name_resolution to add the symbol to this AST node (added in chapter 7)
+  // Used by name_resolution to add the symbol to this AST node
   struct symbol *symbol;
-
-  // Added in chapter 11 for keeping track of associated register
   int reg;
 };
 
@@ -142,7 +140,7 @@ struct param_list {
   struct type *type;
   struct param_list *next;
 
-  // Used by name_resolution to add the symbol to this AST node (added in chapter 7)
+  // Used by name_resolution to add the symbol to this AST node
   struct symbol *symbol;
 };
 
