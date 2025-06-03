@@ -1,4 +1,4 @@
-/* Code generation functions - Chapter 11 */
+
 
 #include <stdlib.h>
 #include "code_gen.h"
@@ -187,21 +187,19 @@ void expr_codegen(struct expr *e) {
       e->reg = solution;
       break;
 
-    // See pages 157-158 where INCQ is mentioned.
+  
     case EXPR_INCREMENT:
       expr_codegen(e->left);
       fprintf(ASM_CODE, "INCQ %s \n", symbol_codegen(e->left->symbol)); 
       e->reg = e->left->reg;
       break; 
 
-    // See page 157 where DEC (DECQ) is mentioned.
     case EXPR_DECREMENT:
       expr_codegen(e->left);
       fprintf(ASM_CODE, "DECQ %s \n", symbol_codegen(e->left->symbol)); 
       e->reg = e->left->reg;
       break;
 
-    /* See pages 160-161 for discussion of calling a function */
     case EXPR_FUNCTIONCALL:
       // save caller-saved registers
       emit_asm("# BEGIN call function ");
@@ -247,7 +245,6 @@ void expr_codegen(struct expr *e) {
     scratch_free(e->right->reg);
     break;
 
-    /* See page 158 */
     case EXPR_EQUAL:
     case EXPR_NOT_EQUAL:
     case EXPR_GREATER_THAN:
@@ -401,8 +398,7 @@ void stmt_codegen(struct stmt *s) {
   stmt_codegen(s->next);
 }
 
-/* Generate assembly code for printing to the console.
-    Printing requires setting up a function call - see page 161 */
+
 void print_codegen(struct stmt *s) {
   struct expr *e = s->expr;
   while (e) {
