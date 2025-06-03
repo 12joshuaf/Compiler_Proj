@@ -1,4 +1,4 @@
-/* Code generation functions - Chapter 11 */
+
 
 #ifndef CODE_GEN_H
 
