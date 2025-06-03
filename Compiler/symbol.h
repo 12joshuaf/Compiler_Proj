@@ -1,7 +1,4 @@
-/* See chapter 7
-  Symbol management code */
 
-  /* Chapter 7 - symbol table management */
 
   #ifndef SYMBOL_H
 
