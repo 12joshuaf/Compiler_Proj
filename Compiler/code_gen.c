@@ -606,8 +606,7 @@ int count_local_variables(struct stmt *s) {
   return c + count_local_variables(s->next);
 }
 
-/* Get the name of the ABI register for an argument.
-    See table on page 162. */
+
 const char *abi_arg_register_name(int arg_position) {
   switch (arg_position) {
     case 0:
