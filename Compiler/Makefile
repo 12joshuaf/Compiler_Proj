@@ -1,4 +1,4 @@
-# Makefile for the semantic analysis lab
+# Makefile for the semantic analysis
 
 PROGRAM=b-minor-compiler
 
