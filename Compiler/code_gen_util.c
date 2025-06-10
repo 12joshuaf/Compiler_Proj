@@ -1,7 +1,4 @@
-/* Utilities for code generation. Built for x86 CPUs.
-    Scratch register allocation tracking - book page 181
-    Label management - book page 182
-    Symbol code generation - book page 183 */
+// Utilities for code generation. Built for x86 CPUs.
 
 #include <stdio.h>
 #include <stdlib.h>
